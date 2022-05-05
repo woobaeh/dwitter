@@ -6,7 +6,7 @@ export default class TweetService {
       createdAt: '2021-05-09T04:20:57.000Z',
       name: 'Bob',
       username: 'bob',
-      url: 'https://www.pngall.com/wp-content/uploads/12/Avatar-Profile.png',
+      url: 'https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-1.png',
     },
   ];
 
