@@ -7,6 +7,7 @@ import TweetService from './service/tweet';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { AuthErrorEventBus } from './context/AuthContext';
+require('dotenv').config();
 
 const baseURL = process.env.REACT_APP_BASE_URL;
 const authErrorEventBus = new AuthErrorEventBus();
