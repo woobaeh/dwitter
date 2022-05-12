@@ -1,20 +1,18 @@
 let tweets = [
   {
     id: '1',
-    text: '팀코카인 화이팅',
+    text: '드림코더분들 화이팅!',
     createdAt: Date.now().toString(),
     name: 'Bob',
     username: 'bob',
-    url: 'https://www.pngall.com/wp-content/uploads/12/Avatar-Profile.png',
+    url: 'https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-1.png',
   },
-
   {
     id: '2',
-    text: '팀코카인 화이팅',
+    text: '안뇽!',
     createdAt: Date.now().toString(),
-    name: 'Woo',
-    username: 'woo',
-    url: 'https://www.pngall.com/wp-content/uploads/12/Avatar-Profile.png',
+    name: 'Ellie',
+    username: 'ellie',
   },
 ];
 
@@ -44,11 +42,12 @@ export async function create(text, name, username) {
 
 export async function update(id, text) {
   const tweet = tweets.find((tweet) => tweet.id === id);
-  if (tweet) tweet.text = text;
+  if (tweet) {
+    tweet.text = text;
+  }
   return tweet;
 }
 
 export async function remove(id) {
   tweets = tweets.filter((tweet) => tweet.id !== id);
-  return tweets;
 }

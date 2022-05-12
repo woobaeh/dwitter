@@ -1,8 +1,8 @@
 import express from 'express';
-import 'express-async-error'; // 프라미스, async 에러 찾기
+import 'express-async-errors';
 import cors from 'cors';
-import morgan from 'morgan'; // for debugging
-import helmet from 'helmet'; // 보안
+import morgan from 'morgan';
+import helmet from 'helmet';
 import tweetsRouter from './router/tweets.js';
 
 const app = express();
@@ -22,5 +22,4 @@ app.use((error, req, res, next) => {
   console.error(error);
   res.sendStatus(500);
 });
-
 app.listen(8080);
